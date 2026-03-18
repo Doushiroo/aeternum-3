@@ -86,7 +86,7 @@ public class AeternumEvents {
                 var holder = effect.getEffect();
                 boolean isCC = holder.is(net.minecraft.world.effect.MobEffects.MOVEMENT_SLOWDOWN) ||
                                holder.is(net.minecraft.world.effect.MobEffects.WEAKNESS) ||
-                               holder.is(net.minecraft.world.effect.MobEffects.NAUSEA) ||
+                               holder.is(net.minecraft.world.effect.MobEffects.CONFUSION) ||
                                holder.is(net.minecraft.world.effect.MobEffects.DIG_SLOWDOWN);
                 if (isCC && effect.getDuration() > 20) {
                     serverPlayer.addEffect(new net.minecraft.world.effect.MobEffectInstance(
