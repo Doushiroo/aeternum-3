@@ -515,7 +515,7 @@ public class SkillSystem {
             case "dissonance" -> {
                 player.level().getEntitiesOfClass(LivingEntity.class, player.getBoundingBox().inflate(10))
                     .stream().filter(e -> e != player)
-                    .forEach(e -> e.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 200, 0)));
+                    .forEach(e -> e.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 200, 0)));
                 player.sendSystemMessage(Component.literal("§dDissonance! Enemies confused!"));
             }
             case "healing_hymn" -> {
