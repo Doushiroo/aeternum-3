@@ -97,7 +97,7 @@ public class TemperatureSystem {
         switch (data.getTemperatureStatus()) {
             case HEAT_STROKE -> {
                 player.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 100, 1, false, false));
-                player.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 100, 0, false, false));
+                player.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, 0, false, false));
                 if (player.tickCount % 40 == 0) {
                     player.hurt(player.damageSources().generic(), 1.0f);
                     player.sendSystemMessage(Component.literal("§c⚠ Heat Stroke! Find shade and water!"));
